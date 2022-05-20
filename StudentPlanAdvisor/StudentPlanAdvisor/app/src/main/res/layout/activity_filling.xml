@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FillingActivity">
+
+    <Spinner
+        android:id="@+id/prespinner"
+        android:layout_width="228dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/reqtv3"
+        app:layout_constraintTop_toBottomOf="@+id/prespinner4" />
+
+    <Spinner
+        android:id="@+id/prespinner4"
+        android:layout_width="228dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toEndOf="@+id/reqtv4"
+        app:layout_constraintTop_toBottomOf="@+id/requirement" />
+
+    <TextView
+        android:id="@+id/reqtv4"
+        android:layout_width="95dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Specify:"
+        android:textColor="#1C0202"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reqtv" />
+
+    <TextView
+        android:id="@+id/reqtv3"
+        android:layout_width="89dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Semester Advised:"
+        android:textColor="#1C0202"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reqtv4" />
+
+    <TextView
+        android:id="@+id/cattv"
+        android:layout_width="124dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="112dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Category:"
+        android:textColor="#1C0202"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pretv" />
+
+    <LinearLayout
+        android:id="@+id/categoryrg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cattv"
+        app:layout_constraintTop_toBottomOf="@+id/prespinner3">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:text="Pearson" />
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="HTU" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_width="284dp"
+        android:layout_height="68dp"
+        android:background="#DA373F"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reqtv3" />
+
+    <TextView
+        android:id="@+id/reqtv"
+        android:layout_width="124dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Requirement:"
+        android:textColor="#1C0202"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cattv" />
+
+    <LinearLayout
+        android:id="@+id/requirement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/reqtv"
+        app:layout_constraintTop_toBottomOf="@+id/categoryrg">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"
+                android:text="Elective" />
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:text="Mandatory" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="413dp"
+        android:layout_height="85dp"
+        android:background="#DA373F"
+        android:gravity="center"
+        android:text="Fill Course Information"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/IDtv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Course ID: "
+        android:textColor="#1C0202"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nametv3" />
+
+    <EditText
+        android:id="@+id/idedt"
+        android:layout_width="210dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Course ID"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/IDtv4"
+        app:layout_constraintTop_toBottomOf="@+id/nameedt" />
+
+    <TextView
+        android:id="@+id/nametv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Course Name: "
+        android:textColor="#1C0202"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title3" />
+
+    <EditText
+        android:id="@+id/nameedt"
+        android:layout_width="210dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Course Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toEndOf="@+id/nametv3"
+        app:layout_constraintTop_toBottomOf="@+id/title3" />
+
+    <TextView
+        android:id="@+id/pretv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Pre-requisites:"
+        android:textColor="#1C0202"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IDtv4" />
+
+    <Spinner
+        android:id="@+id/prespinner3"
+        android:layout_width="228dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toEndOf="@+id/pretv"
+        app:layout_constraintTop_toBottomOf="@+id/prespinner2" />
+
+    <Spinner
+        android:id="@+id/prespinner2"
+        android:layout_width="228dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toEndOf="@+id/pretv"
+        app:layout_constraintTop_toBottomOf="@+id/prespinner1" />
+
+    <Spinner
+        android:id="@+id/prespinner1"
+        android:layout_width="228dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toEndOf="@+id/pretv"
+        app:layout_constraintTop_toBottomOf="@+id/idedt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

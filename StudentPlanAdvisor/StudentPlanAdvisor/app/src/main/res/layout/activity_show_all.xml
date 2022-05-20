@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowAllActivity">
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="295dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="36dp"
+        android:background="#DA373F"
+        android:text="Previous Page"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yearListView"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="414dp"
+        android:layout_height="64dp"
+        android:background="#DA373F"
+        android:gravity="center"
+        android:text="Show Course Information"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/y1tv"
+        android:layout_width="408dp"
+        android:layout_height="68dp"
+        android:background="#E3E0E0"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Choose the Year and Semester"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <ListView
+        android:id="@+id/yearListView"
+        android:layout_width="405dp"
+        android:layout_height="413dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/y1tv">
+
+    </ListView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

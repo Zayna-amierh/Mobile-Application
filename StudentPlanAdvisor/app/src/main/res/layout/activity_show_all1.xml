@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowAllActivity1">
+
+    <ListView
+        android:id="@+id/year1ListView2"
+        android:layout_width="395dp"
+        android:layout_height="213dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/y2tv2">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="412dp"
+        android:layout_height="64dp"
+        android:background="#DA373F"
+        android:gravity="center"
+        android:text="Show Course Information"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/y2tv1"
+        android:layout_width="409dp"
+        android:layout_height="55dp"
+        android:background="#E3E0E0"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="First Year, Fall Semester"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title4" />
+
+    <ListView
+        android:id="@+id/yearListView"
+        android:layout_width="402dp"
+        android:layout_height="174dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/y2tv1">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/y2tv2"
+        android:layout_width="409dp"
+        android:layout_height="56dp"
+        android:background="#E3E0E0"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="First Year, Spring Semester"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yearListView" />
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="141dp"
+        android:layout_height="47dp"
+        android:background="#DA373F"
+        android:text="Previous Page"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/year1ListView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

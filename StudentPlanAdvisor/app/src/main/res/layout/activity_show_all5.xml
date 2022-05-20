@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowAllActivity5">
+
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="415dp"
+        android:layout_height="72dp"
+        android:background="#DA373F"
+        android:gravity="center"
+        android:text="Show Course Information"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/electives"
+        android:layout_width="415dp"
+        android:layout_height="62dp"
+        android:background="#E3E0E0"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Electives"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title4" />
+
+    <ListView
+        android:id="@+id/yearListView"
+        android:layout_width="398dp"
+        android:layout_height="410dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/electives">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="141dp"
+        android:layout_height="47dp"
+        android:background="#DA373F"
+        android:text="Previous Page"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yearListView"
+        app:layout_constraintVertical_bias="0.349" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
